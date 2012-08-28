@@ -5,13 +5,11 @@
 */
 
 #include <vcl.h>
-#pragma hdrstop
+//#pragma hdrstop
 #include <tchar.h>
 extern "C" {
 #include "ACore.c"
 }
-
-//USEFORM("Unit1.cpp", Form1);
 
 WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
@@ -24,30 +22,6 @@ WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 
 	CoreLib_Close();
 
-	/*
-	try
-	{
-		Application->Initialize();
-		Application->MainFormOnTaskBar = true;
-		Application->CreateForm(__classid(TForm1), &Form1);
-		Application->Run();
-	}
-	catch (Exception &exception)
-	{
-		Application->ShowException(&exception);
-	}
-	catch (...)
-	{
-		try
-		{
-			throw Exception("");
-		}
-		catch (Exception &exception)
-		{
-			Application->ShowException(&exception);
-		}
-	}
-	*/
 	return 0;
 }
 //---------------------------------------------------------------------------
