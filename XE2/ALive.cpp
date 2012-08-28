@@ -9,6 +9,7 @@
 #include <tchar.h>
 extern "C" {
 #include "ACore.c"
+#include "APlugins.h"
 }
 
 WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
@@ -24,4 +25,4 @@ WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 
 	return 0;
 }
-//---------------------------------------------------------------------------
+
