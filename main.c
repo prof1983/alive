@@ -4,10 +4,18 @@
 	LastMod 28.08.2012
 */
 
-#include <stdio.h>
+#include "ACore.c"
 
 int main(void)
 {
-	printf("Hello World!\n");
+	CoreLib_Open("ACore32.dll");
+
+	ACore_Boot();
+	ACore_Init();
+	ACore_Run();
+	ACore_Fin();
+
+	CoreLib_Close();
+
 	return 0;
 }
