@@ -11,7 +11,9 @@ extern "C" {
 #include "ALibraries.c"
 #include "APluginsLibImp.h"
 #include "ASystemLibImp.h"
+#include "AUiControls.h"
 #include "AUiLibImp.h"
+#include "AUiMainLibImp.h"
 }
 
 WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
@@ -27,6 +29,7 @@ WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 
 	ACore_Boot();
 	ACore_Init();
+
 	ACore_Run();
 	ACore_Fin();
 

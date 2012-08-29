@@ -35,7 +35,7 @@
 			<Base>true</Base>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Base)'!=''">
-			<ILINK_LibraryPath>..\..\AToolkit\Base\;..\..\AToolkit\Common\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+			<ILINK_LibraryPath>..\..\AToolkit\Include\;..\..\AToolkit\Ui\;..\..\AToolkit\Base\;..\..\AToolkit\Common\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
 			<_TCHARMapping>wchar_t</_TCHARMapping>
 			<ProjectType>CppVCLApplication</ProjectType>
 			<PackageImports>DataSnapIndy10ServerTransport;bindcompfmx;fmx;rtl;IndySystem;DbxClientDriver;dbrtl;bindcomp;inetdb;DataSnapServer;DBXInterBaseDriver;DataSnapCommon;DataSnapClient;DataSnapProviderClient;xmlrtl;DbxCommonDriver;IndyProtocols;dbxcds;DBXMySQLDriver;bindengine;soaprtl;DBXOracleDriver;CustomIPTransport;dsnap;DBXInformixDriver;IndyCore;fmxase;DBXFirebirdDriver;inet;fmxobj;inetdbxpress;DBXSybaseASADriver;fmxdae;dbexpress;IPIndyImpl;$(PackageImports)</PackageImports>
@@ -43,7 +43,7 @@
 			<UsingDelphiRTL>true</UsingDelphiRTL>
 			<DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
 			<AllPackageLibs>rtl.lib;vcl.lib</AllPackageLibs>
-			<IncludePath>..\..\AToolkit\Base\;..\..\AToolkit\Common\;..\..\AToolkit\Base;..\..\AToolkit\Common;..\..\AToolkit\Include;$(IncludePath)</IncludePath>
+			<IncludePath>..\..\AToolkit\Include\;..\..\AToolkit\Ui\;..\..\AToolkit\Base\;..\..\AToolkit\Common\;..\..\AToolkit\Base;..\..\AToolkit\Common;..\..\AToolkit\Include;$(IncludePath)</IncludePath>
 			<Icon_MainIcon>$(BDS)\bin\cbuilder_PROJECTICON.ico</Icon_MainIcon>
 			<DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
 			<DynamicRTL>true</DynamicRTL>
@@ -107,6 +107,9 @@
 			</CppCompile>
 			<CppCompile Include="..\..\AToolkit\Common\AUiLibImp.c">
 				<BuildOrder>3</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="..\..\AToolkit\Ui\AUiMainLibImp.c">
+				<BuildOrder>6</BuildOrder>
 			</CppCompile>
 			<BuildConfiguration Include="Release">
 				<Key>Cfg_2</Key>
