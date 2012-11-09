@@ -18,6 +18,8 @@ extern "C" {
 
 WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
+    AWindow Win;
+
 	CoreLib_Open("ACore32.dll");
 
 	APlugins_Boot(Lib);
@@ -29,6 +31,8 @@ WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 
 	ACore_Boot();
 	ACore_Init();
+
+    Win = AUi_GetMainWindow();
 
 	ACore_Run();
 	ACore_Fin();
